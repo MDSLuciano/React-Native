@@ -10,8 +10,6 @@ type MinMaxProps = {
 
 export default function MinMax({x, y}: MinMaxProps) {
   return (
-    <View style={styles.container}>
       <Text style={styles.textBig}>{x > y ? `O valor de ${x} é maior que o valor de ${y}!` : `O valor de ${y} é maior que o valor de ${x}!`}</Text>
-    </View>
   );
 }
