@@ -3,7 +3,11 @@ import { Button } from 'react-native';
 
 import { styles } from './StyleSheets';
 
-export default () => {
+interface ButtonProps {
+    title: string;
+}
+
+export default (props: ButtonProps) => {
     function execute() {
         console.warn('Executando...')
     }
