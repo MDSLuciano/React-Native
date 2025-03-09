@@ -7,19 +7,32 @@ import Title from './components/Title';
 import Button from './components/Button';
 import Counter from './components/Counter';
 // import Father from './components/direta/Father';
-import Father from './components/indireta/Father';
+// import Father from './components/indireta/Father';
 import CounterV2 from './components/counter/CounterV2';
 import Differentiator from './components/Differentiator';
 import EvenOdd from './components/EvenOdd';
+import Family from './components/relationship/Family';
+import Member from './components/relationship/Member';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <EvenOdd num={10} />
+      <Family >
+        <Member name='Gabriel' lastName='Silva'/>
+        <Member name='Gustavo' lastName='Silva'/>
+      </Family>
+
+      <Family >
+        <Member name='Luciano' lastName='Arruda'/>
+        <Member name='Maria' lastName='Arruda'/>
+        <Member name='Rebecca' lastName='Arruda'/>
+        <Member name='Gui' lastName='Arruda'/>
+      </Family>
       {/* 
-      <Differentiator />
       <CounterV2 />               
+      <EvenOdd num={10} />
+      <Differentiator />
       <Father />
       <Counter initial={100} skip={10} />
       <Button title="Executar"/>
