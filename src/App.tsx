@@ -9,14 +9,16 @@ import Counter from './components/Counter';
 // import Father from './components/direta/Father';
 import Father from './components/indireta/Father';
 import CounterV2 from './components/counter/CounterV2';
-import Differentiator from './components/differentiator';
+import Differentiator from './components/Differentiator';
+import EvenOdd from './components/EvenOdd';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <Differentiator />
+      <EvenOdd num={10} />
       {/* 
+      <Differentiator />
       <CounterV2 />               
       <Father />
       <Counter initial={100} skip={10} />
